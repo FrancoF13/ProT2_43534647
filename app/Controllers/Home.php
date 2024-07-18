@@ -6,7 +6,8 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo View('front/head_view');
+        $data['titulo']='Pagina Principal';
+        echo View('front/head_view', $data);
         echo View('front/navbar_view');
         echo View('front/principal');
         echo View('front/footer_view');
@@ -14,7 +15,8 @@ class Home extends BaseController
 
     public function quienes_somos()
     {
-        echo View('front/head_view');
+        $data['titulo']='Quienes Somos';
+        echo View('front/head_view', $data);
         echo View('front/navbar_view');
         echo View('front/quienes_somos');
         echo View('front/footer_view');
@@ -22,7 +24,8 @@ class Home extends BaseController
 
     public function acerca_de()
     {
-        echo View('front/head_view');
+        $data['titulo']='Acerca De';
+        echo View('front/head_view', $data);
         echo View('front/navbar_view');
         echo View('front/acerca_de');
         echo View('front/footer_view');
@@ -30,17 +33,19 @@ class Home extends BaseController
 
     public function registro()
     {
-        echo View('front/head_view');
+        $data['titulo']='Registro';
+        echo View('front/head_view', $data);
         echo View('front/navbar_view');
-        echo View('front/registro');
+        echo View('back/usuario/registro');
         echo View('front/footer_view');
     }
 
     public function login()
     {
-        echo View('front/head_view');
+        $data['titulo']='Login';
+        echo View('front/head_view', $data);
         echo View('front/navbar_view');
-        echo View('front/login');
+        echo View('back/usuario/login');
         echo View('front/footer_view');
     }
 }

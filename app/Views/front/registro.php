@@ -27,7 +27,7 @@
 
                 <div class="form-group">
                     <label for="contrasena">Contraseña:</label>
-                    <input type="password" class="form-control mt-4" id="contrasena" name="contrasena" required>
+                    <input type="password" class="form-control mt-4" id="contraseña" name="contraseña" required>
                 </div>
 
                 <div class="d-flex justify-content-between mt-3">
@@ -68,4 +68,13 @@
         background-color: #dc3545;
         border-color: #dc3545;
     }
+
+    #verContrasena {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
 </style>
