@@ -13,7 +13,7 @@ class Panel_controller extends Controller
 
             $data['perfil_id']=$perfil;
 
-        $dato['Titulo']='panel del usuario';
+        $dato['titulo']='Panel del Usuario';
         echo view('front/head_view', $dato);
         echo view('front/navbar_view');
         echo view('back/usuario/usuario_logueado',$data);

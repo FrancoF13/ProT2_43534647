@@ -1,6 +1,6 @@
 <?php  
 namespace App\Controllers;
-use codeIgniter\controller;
+use CodeIgniter\controller;
 use App\Models\usuario_Model;
 
 class login_controller extends BaseController
@@ -10,7 +10,7 @@ class login_controller extends BaseController
     {
         helper(["form","url"]);
 
-        $dato['Titulo'] = 'login';
+        $dato['titulo'] = 'login';
         echo view('front/head_view',$dato);
         echo view("front/navbar_view");
         echo view("back/usuario/login");
@@ -44,7 +44,7 @@ class login_controller extends BaseController
                 configuracion de la contraseña*/
 
                 if($verify_pass){
-                $ses_data = [
+                $ses_data = [ 
                     'id_usuario' => $data['id_usuario'],
                     'nombre' => $data['nombre'],
                     'apellido' => $data['apellido'],

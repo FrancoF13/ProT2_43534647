@@ -42,7 +42,7 @@ class Home extends BaseController
 
     public function login()
     {
-        $data['titulo']='Login';
+        $data['titulo']='Logearte';
         echo View('front/head_view', $data);
         echo View('front/navbar_view');
         echo View('back/usuario/login');
